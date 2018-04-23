@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html>
+<meta  charset="utf-8" />
 <head>
-<meta charset="utf-8" />
+<style>
+div{
+	font-size:30px;
+}
+.trans_effect {
+    display:block;
+    line-height:100px;
+    width:200px;
+    background:#beceeb;
+    margin:30px auto;
+    text-align:center;
+    -webkit-transition:all 2s ease-in-out;
+    -moz-transition:all 2s ease-in-out;
+    -o-transition:all 2s ease-in-out;
+    -ms-transition:all 2s ease-in-out;    
+    transition:all 2s ease-in-out;
+}
+.trans_effect:hover {
+    -webkit-transform:rotate(720deg) scale(2,2);
+    -moz-transform:rotate(720deg) scale(2,2);
+    -o-transform:rotate(720deg) scale(2,2);
+    -ms-transform:rotate(720deg) scale(2,2);
+    transform:rotate(720deg) scale(2,2);        
+}
+
+</style>
 </head>
-
 <body>
-
-<form   oninput="x.value=parseInt(num1.value)*parseInt(num2.value)" >
-	<input type="text" id="num1">
-	*
-	<input type="text" id="num2">
-	=
-	<output for="num1 num2" name="x"></output>
-</form>
-
+<div class="trans_effect">
+	鼠标移过来
+</div>
 </body>
 </html>
